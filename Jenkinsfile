@@ -50,7 +50,7 @@ pipeline {
             // 프론트엔드 디렉토리의 정적파일들을 S3 에 올림, 이 전에 반드시 EC2 instance profile 을 등록해야함.
             dir ('./website'){
                 sh '''
-                aws s3 sync ./ s3://oolalla-test-s3bucket
+                aws s3 sync ./ s3://oolalla-test-s3bucket/
                 '''
             }
           }
