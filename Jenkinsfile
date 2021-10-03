@@ -21,9 +21,9 @@ pipeline {
             steps {
                 echo 'Clonning Repository'
 
-                git url: 'https://github.com/oolalla/test-repository.git',  //ㄴㅐ꺼 입입력
+                git url: 'https://github.com/oolalla/test-repository.git', 
                     branch: 'master',
-                    credentialsId: 'jenkinsgit'    //젠젠킨킨스  credential 생성id
+                    credentialsId: 'git-token-for-jenkins'
             }
 
             post {
